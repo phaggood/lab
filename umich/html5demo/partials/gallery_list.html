@@ -1,0 +1,17 @@
+<div class="bar bar-subheader">
+    <h2 class="title"><a ui-sref="camera">Camera</a></h2>
+</div>
+<p>
+<ul rn-carousel rn-carousel-indicator class="my-slider standard ng-cloak">
+    <li ng-repeat="picture in gallery">
+        <a ui-sref="photoView({id:{{picture.id}}})">
+            <div class="layer"><img src="{{picture.pic}}"/></div>
+        </a>
+    </li>
+</ul>
+<div ui-view>
+</div>
+</p>
+<div class="bar bar-footer bar-positive">
+    <div class="title"><a ui-sref="gallery.clear">Clear Gallery</a></div>
+</div>

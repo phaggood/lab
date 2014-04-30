@@ -1,0 +1,22 @@
+<div class="bar bar-subheader">
+    <h2 class="title"><a ui-sref="gallery">Back To Gallery</a></h2>
+</div>
+<div class="list card">
+
+    <div>
+        <img src="{{galleryPicture.pic}}"/>
+        </div>
+    <div class="item item-avatar">
+        <img src="images/camera.png">
+        <h2>Image #{{galleryPicture.id}}</h2>
+        <p>{{galleryPicture.date}}</p>
+    </div>
+    <div class="button-bar">
+        <a class="button">Upload</a>
+        <a class="button">Effects</a>
+        <a class="button">Remove</a>
+    </div>
+</div>
+<div class="bar bar-footer bar-positive">
+    <div class="title">Image ID: {{galleryPicture.id}}</div>
+</div>

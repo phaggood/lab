@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="camapp">
+<head>
+    <meta charset="utf-8">
+    <title>Angular Photo Booth</title>
+    <link href="css/angular-carousel.css" rel="stylesheet">
+    <link href="css/capture.css" rel="stylesheet">
+    <!-- ionic css -->
+    <link href="css/ionic.css" rel="stylesheet">
+
+    <!-- Angular -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular-touch.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="js/angular-carousel.js"></script>
+    <!-- UI-Router -->
+    <script src="//angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
+    <!-- Misc -->
+    <script src="js/angular-local-storage.js"></script>
+    <script src="js/ionic.js"></script>
+    <script type="text/javascript" src="js/webcam.min.js"></script>
+    <!-- Custom -->
+    <script src="js/camera.js" type="text/javascript"></script>
+</head>
+<body>
+<ion-header-bar title="'Header'">
+</ion-header-bar>
+
+<!-- content area -->
+<ion-content
+        has-header="true"
+        has-footer="true"
+        scroll="true"
+        >
+    <div class="bar bar-header bar-positive">
+        <div class="title">Photo Booth</div>
+    </div>
+    <div ui-view></div>
+</ion-content>
+</body>
+</html>

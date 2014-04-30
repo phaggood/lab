@@ -1,0 +1,26 @@
+<div class="bar bar-subheader">
+    <h2 class="title"><a ui-sref="gallery">Gallery</a></h2>
+</div>
+    <div class="card" scroll="true">
+                <!-- video id="webcam" autoplay ></video -->
+                <webcam on-stream="onStream(stream,video)"
+                        on-access-denied="onError(err)"
+                        on-streaming="onSuccess(video)">
+                </webcam>
+                <div ng-show="cameraReady">
+                    <button  class="btn btn-primary" ng-click="takePicture()">Click</button>
+                </div>
+                <div ng-show="picReady">
+                    <canvas id="snapshot"></canvas>
+                    <p>
+                        <button  class="btn btn-primary" ng-click="addToGallery()">Save To Gallery</button>
+                    </p>
+                </div>
+
+        </div>
+    </div>
+<div class="bar bar-footer bar-positive">
+    <div ng-show="hasGallery">
+        <div class="title">Image Count {{galleryCount}}</div>
+    </div>
+</div>
